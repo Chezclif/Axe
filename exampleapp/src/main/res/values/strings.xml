@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Example app</string>
+
+    <string name="start_test">Test</string>
+    <string name="dialog_progress">Progress..</string>
+    <string name="error_message">Error!</string>
 </resources>

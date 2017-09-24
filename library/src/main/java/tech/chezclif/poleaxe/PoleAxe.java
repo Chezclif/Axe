@@ -15,9 +15,6 @@ import tech.chezclif.poleaxe.annotations.BindModel;
 import tech.chezclif.poleaxe.annotations.ModelField;
 import tech.chezclif.poleaxe.rules.ViewRule;
 
-/**
- * Created by Admin on 11/8/2016.
- */
 public class PoleAxe<T> {
     private Object mController;
     private Class<T> modelClass;

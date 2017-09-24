@@ -1,6 +1,7 @@
 package llc.taurusgroup.exampleapp.data.rest;
 
 import java.util.concurrent.TimeUnit;
+
 import llc.taurusgroup.exampleapp.data.rest.api.RestServiceSimple;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -9,9 +10,9 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RestManager {
-    public static String SERVER_PATH = "https://";
+    public static String SERVER_PATH = "https://gurujsonrpc.appspot.com/";
 
-    public RestServiceSimple getRestServiceAutorization() {
+    public RestServiceSimple getRestService() {
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
