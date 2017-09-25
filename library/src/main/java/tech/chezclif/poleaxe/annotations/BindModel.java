@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Помечает поля View
+ * Mark View fields
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target( { ElementType.FIELD })

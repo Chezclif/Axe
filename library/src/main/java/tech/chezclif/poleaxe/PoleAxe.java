@@ -115,14 +115,6 @@ public class PoleAxe<T> {
         return specialRules.containsKey(id);
     }
 
-    /**
-     * Добавить значение для конкретного поля модели
-     *
-     * @param mod
-     * @param fieldName
-     * @param value
-     * @throws IllegalAccessException
-     */
     private void setModelField(T mod, String fieldName, Object value) throws IllegalAccessException {
         for (Field field : mod.getClass().getDeclaredFields()) {
             field.setAccessible(true);

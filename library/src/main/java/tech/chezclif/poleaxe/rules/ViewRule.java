@@ -3,10 +3,10 @@ package tech.chezclif.poleaxe.rules;
 import android.view.View;
 
 /**
- * Правило, по которому осуществляется взятие и посылка данных во View
- * @param <T> Класс View, который будет обработан
- * @param <I> Формат данных, передаваемый во View
- * @param <O> Формат данных, забираемый с View
+ * Rule for collect and bind data
+ * @param <T> View class for work
+ * @param <I> Data type for bind into View
+ * @param <O> Data type extracted from View
  */
 public interface ViewRule<T extends View,I,O> {
     public O getData(T view);
